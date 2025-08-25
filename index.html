@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Personal Preferences Survey</h1>
+    <p id="description">A few quick questions about your favorites.</p>
+    <div class="container">
+        <form id="survey-form" method="POST">
+            <div class="form"><label for="name" id="name-label">Name: </label><input type="text" id="name" placeholder="Enter Your Name" required></div>
+            <div class="form"><label for="email" id="email-label">Email: </label><input type="email" id="email" placeholder="Enter Your Email" required></div>
+            <div class="form"><label for="number" id="number-label">Age: (optional)</label><input type="number" id="number" min="10" max="120" placeholder="Age"></div>
+            <div class="form"><label for="dropdown">Which best describes you?</label>
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select your option</option>
+                <option value="earlybird">Earlybird</option>
+                <option value="nightowl">nightowl</option>
+                <option value="other">Other</option>
+            </select></div>
+            <div class="form">
+            <p>Do You Like?</p>
+            <label for="coffee"><input type="radio" name="like" id="coffee" value="coffee" checked> Coffee</label>
+            <label for="tea"><input type="radio" name="like" id="tea" value="tea"> Tea</label>
+            </div>
+            <div class="form">
+            <p>Which one is your favorite?</p>
+            <label for="chocolate"><input type="checkbox" name="favorite" id="chocolate" value="chocolate"> Chocolate</label>
+            <label for="vanilla"><input type="checkbox" name="favorite" id="vanilla" value="vanilla"> Vanilla</label>
+            <label for="strawberry"><input type="checkbox" name="favorite" id="strawberry" value="strawberry"> Strawberry</label>
+            </div>
+            <div class="form"><label for="textarea">Any Comments or Suggestions?</label>
+            <textarea id="textarea" placeholder="Enter your comment here..."></textarea></div>
+            <div class="form"><input type="submit" id="submit" value="Submit"></div>
+        </form>
+    </div>
+  </body>
+
+</html>
