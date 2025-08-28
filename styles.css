@@ -22,6 +22,12 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 .form {
     margin-bottom: 15px;
     margin-top: 15px;
